@@ -12,8 +12,11 @@
 		C2DDB6242304436900601FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DDB6222304436900601FDB /* Main.storyboard */; };
 		C2DDB6262304436A00601FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DDB6252304436A00601FDB /* Assets.xcassets */; };
 		C2DDB6292304436A00601FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DDB6272304436A00601FDB /* LaunchScreen.storyboard */; };
-		C2DDB6312304438300601FDB /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6302304438300601FDB /* CourseTableViewController.swift */; };
+		C2DDB6312304438300601FDB /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6302304438300601FDB /* CategoryTableViewController.swift */; };
 		C2DDB6332304439100601FDB /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6322304439100601FDB /* QuestionListViewController.swift */; };
+		C2DDB6372304542600601FDB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6362304542600601FDB /* InputViewController.swift */; };
+		C2DDB6392304649B00601FDB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6382304649B00601FDB /* Service.swift */; };
+		C2DDB63B23047B1500601FDB /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB63A23047B1500601FDB /* CategoryData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +29,11 @@
 		C2DDB6252304436A00601FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2DDB6282304436A00601FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2DDB62A2304436A00601FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2DDB6302304438300601FDB /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
+		C2DDB6302304438300601FDB /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		C2DDB6322304439100601FDB /* QuestionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
+		C2DDB6362304542600601FDB /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		C2DDB6382304649B00601FDB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C2DDB63A23047B1500601FDB /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +79,24 @@
 			children = (
 				C2DDB61E2304436900601FDB /* AppDelegate.swift */,
 				C2DDB6222304436900601FDB /* Main.storyboard */,
-				C2DDB6322304439100601FDB /* QuestionListViewController.swift */,
-				C2DDB6302304438300601FDB /* CourseTableViewController.swift */,
+				C2DDB63E2304FF6D00601FDB /* ViewControllers */,
+				C2DDB6382304649B00601FDB /* Service.swift */,
+				C2DDB63A23047B1500601FDB /* CategoryData.swift */,
 				C2DDB6252304436A00601FDB /* Assets.xcassets */,
 				C2DDB6272304436A00601FDB /* LaunchScreen.storyboard */,
 				C2DDB62A2304436A00601FDB /* Info.plist */,
 			);
 			path = Heritage;
+			sourceTree = "<group>";
+		};
+		C2DDB63E2304FF6D00601FDB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2DDB6302304438300601FDB /* CategoryTableViewController.swift */,
+				C2DDB6322304439100601FDB /* QuestionListViewController.swift */,
+				C2DDB6362304542600601FDB /* InputViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		F9C7EDD67D696B27A7F08778 /* Pods */ = {
@@ -88,7 +105,6 @@
 				45713B42A530834082A0D666 /* Pods-Heritage.debug.xcconfig */,
 				9C7D2D8D39833A3D71593794 /* Pods-Heritage.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,9 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DDB6312304438300601FDB /* CourseTableViewController.swift in Sources */,
+				C2DDB63B23047B1500601FDB /* CategoryData.swift in Sources */,
+				C2DDB6312304438300601FDB /* CategoryTableViewController.swift in Sources */,
+				C2DDB6372304542600601FDB /* InputViewController.swift in Sources */,
 				C2DDB6332304439100601FDB /* QuestionListViewController.swift in Sources */,
 				C2DDB61F2304436900601FDB /* AppDelegate.swift in Sources */,
+				C2DDB6392304649B00601FDB /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
