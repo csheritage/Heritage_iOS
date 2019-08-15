@@ -17,6 +17,9 @@
 		C2DDB6372304542600601FDB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6362304542600601FDB /* InputViewController.swift */; };
 		C2DDB6392304649B00601FDB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6382304649B00601FDB /* Service.swift */; };
 		C2DDB63B23047B1500601FDB /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB63A23047B1500601FDB /* CategoryData.swift */; };
+		C2DDB640230501F900601FDB /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB63F230501F900601FDB /* CategoryList.swift */; };
+		C2DDB64223052A4200601FDB /* ExamRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB64123052A4200601FDB /* ExamRequestViewController.swift */; };
+		C2DDB6462305324E00601FDB /* ExamPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB6452305324E00601FDB /* ExamPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		C2DDB6362304542600601FDB /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		C2DDB6382304649B00601FDB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C2DDB63A23047B1500601FDB /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		C2DDB63F230501F900601FDB /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		C2DDB64123052A4200601FDB /* ExamRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamRequestViewController.swift; sourceTree = "<group>"; };
+		C2DDB6452305324E00601FDB /* ExamPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 				C2DDB63E2304FF6D00601FDB /* ViewControllers */,
 				C2DDB6382304649B00601FDB /* Service.swift */,
 				C2DDB63A23047B1500601FDB /* CategoryData.swift */,
+				C2DDB63F230501F900601FDB /* CategoryList.swift */,
 				C2DDB6252304436A00601FDB /* Assets.xcassets */,
 				C2DDB6272304436A00601FDB /* LaunchScreen.storyboard */,
 				C2DDB62A2304436A00601FDB /* Info.plist */,
@@ -95,6 +102,8 @@
 				C2DDB6302304438300601FDB /* CategoryTableViewController.swift */,
 				C2DDB6322304439100601FDB /* QuestionListViewController.swift */,
 				C2DDB6362304542600601FDB /* InputViewController.swift */,
+				C2DDB64123052A4200601FDB /* ExamRequestViewController.swift */,
+				C2DDB6452305324E00601FDB /* ExamPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,12 +218,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Heritage/Pods-Heritage-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,7 +245,10 @@
 				C2DDB6312304438300601FDB /* CategoryTableViewController.swift in Sources */,
 				C2DDB6372304542600601FDB /* InputViewController.swift in Sources */,
 				C2DDB6332304439100601FDB /* QuestionListViewController.swift in Sources */,
+				C2DDB6462305324E00601FDB /* ExamPageViewController.swift in Sources */,
 				C2DDB61F2304436900601FDB /* AppDelegate.swift in Sources */,
+				C2DDB64223052A4200601FDB /* ExamRequestViewController.swift in Sources */,
+				C2DDB640230501F900601FDB /* CategoryList.swift in Sources */,
 				C2DDB6392304649B00601FDB /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2FVBU2BHD;
 				INFOPLIST_FILE = Heritage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A2FVBU2BHD;
 				INFOPLIST_FILE = Heritage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

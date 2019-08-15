@@ -6,6 +6,7 @@ target 'Heritage' do
   use_frameworks!
 
 pod 'Floaty', '~> 4.2.0'
+pod "KRProgressHUD"
 
 
 

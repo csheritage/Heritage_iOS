@@ -1,16 +1,24 @@
 PODS:
   - Floaty (4.2.0)
+  - KRActivityIndicatorView (3.0.2)
+  - KRProgressHUD (3.4.1):
+    - KRActivityIndicatorView (= 3.0.2)
 
 DEPENDENCIES:
   - Floaty (~> 4.2.0)
+  - KRProgressHUD
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Floaty
+    - KRActivityIndicatorView
+    - KRProgressHUD
 
 SPEC CHECKSUMS:
   Floaty: e2bd5a0f6f7f70899e26ff2da31081c8bee8d1b0
+  KRActivityIndicatorView: a2022d5d3e366207d2690f6bcc550f83aa91241b
+  KRProgressHUD: 115363b48feb530ab1f36c4146ed22e779e0f5aa
 
-PODFILE CHECKSUM: 5e6731341c17ea2c9c563ab4ca7d873f1f5fd912
+PODFILE CHECKSUM: 8362b8db564b10f8016599cf5444aca8b1b0828c
 
 COCOAPODS: 1.6.1
